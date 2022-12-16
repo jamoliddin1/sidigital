@@ -1,0 +1,61 @@
+/* Main styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	letter-spacing: 1px;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+/* Navigation */
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 0;
+}
+
+.nav-items {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.nav-list__items {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	list-style: none;
+	font-size: 14px;
+}
+
+.nav-list__item a {
+	color: #171717;
+}
+
+.hiring {
+	background-color: #FFC909;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.contact-us {
+	color: #fff;
+	background-color: #E51062;
+	padding: 14px;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 600;
+}
