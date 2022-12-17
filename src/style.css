@@ -8,6 +8,7 @@
 body {
 	letter-spacing: 1px;
 	font-family: sans-serif;
+	color: #171717;
 }
 
 a {
@@ -58,4 +59,32 @@ a {
 	border-radius: 30px;
 	font-size: 14px;
 	font-weight: 600;
+}
+
+/* Main page bottom of header */
+.main-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-text {
+	width: 565px;
+	line-height: 43px;
+}
+
+/* Blob */
+.blob-side {
+	position: relative;
+}
+
+.blob {
+	width: 600px;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 58%;
+	transform: translate(-50%, -50%)
 }
