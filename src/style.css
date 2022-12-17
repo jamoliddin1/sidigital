@@ -167,3 +167,36 @@ header {
 .our-work-img {
 	width: 549px;
 }
+
+/* Our formula (card) */
+.formula {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("./img/bg.png");
+	background-size: cover;
+	height: 440px;
+}
+
+.formula-card {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 670px;
+	height: 315px;
+	background-color: #fff;
+	text-align: center;
+	padding: 72px 32px; 
+}
+
+.formula-card span {
+	font-size: 13px;
+}
+
+.formula-card h4 {
+	font-size: 29px;
+}
+
+.formula-card p {
+	line-height: 2;
+}
