@@ -41,6 +41,28 @@ section {
 	padding-bottom: 100px;
 }
 
+/* Underline effect */
+.underline-effect {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+.underline-effect::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 4px;
+	background: linear-gradient(transparent calc(100% - 2px), rgb(229, 16, 98) 2px);
+	transition: width .25s ease-out;
+}
+
+.underline-effect:hover::before {
+	width: 100%;
+}
+
 /* Navigation */
 header.container {
 	margin-bottom: 50px;
@@ -83,6 +105,12 @@ header.container {
 	background-color: #FFC909;
 	border-radius: 4px;
 	padding: 10px;
+	transition: background-color .5s;
+}
+
+.hiring:hover {
+	background-color: #FEDB5C;
+	cursor: pointer;
 }
 
 .contact-us {
@@ -92,6 +120,11 @@ header.container {
 	border-radius: 30px;
 	font-size: 14px;
 	font-weight: 600;
+	transition: background-color .5s;
+}
+
+.contact-us:hover {
+	background-color: #c81157;
 }
 
 /* Main page bottom of header */
