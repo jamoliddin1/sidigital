@@ -63,6 +63,17 @@ section {
 	width: 100%;
 }
 
+.text-underline-effect {
+	display: inline;
+	background: linear-gradient(transparent calc(100% - 2px), rgb(229, 16, 98) 2px);
+	background-repeat: no-repeat;
+	background-size: 0 10px;
+	background-position: 0px 100%;
+	padding: 3px 0;
+	overflow-wrap: break-word;
+	transition: background-size .25s ease 0s;
+}
+
 /* Navigation */
 header.container {
 	margin-bottom: 50px;
@@ -208,6 +219,10 @@ header.container {
 .our-work-left__title {
 	font-size: 23px;
 	line-height: 39px;
+}
+
+.our-work-content:hover span.text-underline-effect {
+	background-size: 100% 10px;
 }
 
 .our-work-img {
