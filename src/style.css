@@ -269,8 +269,12 @@ header.container {
 	font-size: 13px;
 }
 
-.formula-card h4 {
+.formula-card span.text-underline-effect {
 	font-size: 29px;
+}
+
+.formula-card:hover span.text-underline-effect {
+	background-size: 100% 10px;
 }
 
 .formula-card p {
