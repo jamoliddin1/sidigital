@@ -42,7 +42,8 @@ section {
 }
 
 /* Underline effect */
-.underline-effect {
+.underline-effect,
+.underline-effect-static {
 	display: inline-block;
 	position: relative;
 	padding-bottom: 3px;
@@ -72,6 +73,21 @@ section {
 	padding: 3px 0;
 	overflow-wrap: break-word;
 	transition: background-size .25s ease 0s;
+}
+
+.underline-effect-static::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(transparent calc(100% - 2px), rgb(255, 255, 255) 2px);
+	transition: width .25s ease-out;
+}
+
+.underline-effect-static:hover::before {
+	width: 0;
 }
 
 /* Navigation */
@@ -223,6 +239,10 @@ header.container {
 
 .our-work-content:hover span.text-underline-effect {
 	background-size: 100% 10px;
+}
+
+.read-more span.underline-effect-static::before {
+	background: linear-gradient(transparent calc(100% - 2px), rgb(229, 16, 98) 2px);
 }
 
 .our-work-img {
